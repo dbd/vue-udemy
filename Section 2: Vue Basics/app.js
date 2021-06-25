@@ -9,8 +9,8 @@ const app = Vue.createApp({
   },
 
   methods: {
-    changeTitle() {
-      this.title = "The Road to El Dorado";
+    changeTitle(title) {
+      this.title = title;
     },
   },
 });
