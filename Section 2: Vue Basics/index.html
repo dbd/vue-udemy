@@ -38,7 +38,11 @@
       <a :href="url">link to site</a>
       <div v-if="showBooks">
         <ul>
-          <li v-for="book in books" :class="{ fav: book.isFav}">
+          <li
+            v-for="book in books"
+            :class="{ fav: book.isFav}"
+            @click="toggleIsFav(book)"
+          >
             <h3>{{book.title}}</h3>
             <p>{{book.author}}</p>
           </li>
