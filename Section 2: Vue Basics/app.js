@@ -22,6 +22,7 @@ const app = Vue.createApp({
       ],
       x: 0,
       y: 0,
+      url: "dbd.sh",
     };
   },
 
