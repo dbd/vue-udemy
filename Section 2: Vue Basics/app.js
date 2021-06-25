@@ -7,6 +7,12 @@ const app = Vue.createApp({
       age: 45,
     };
   },
+
+  methods: {
+    changeTitle() {
+      this.title = "The Road to El Dorado";
+    },
+  },
 });
 
 app.mount("#app");
