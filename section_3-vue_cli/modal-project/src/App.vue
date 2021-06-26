@@ -12,8 +12,15 @@
       </template>
     </Modal>
   </div>
+  <div v-if="showOtherModal">
+    <Modal @close="toggleOtherModal">
+      <h1>Hello from the other modal</h1>
+      <p>still a modal</p>
+    </Modal>
+  </div>
   <p>Welcome</p>
   <button @click="toggleModal">Open Modal</button>
+  <button @click="toggleOtherModal">Open Other Modal</button>
 </template>
 
 <script>
@@ -28,6 +35,7 @@ export default {
       modalHeader: "Sign up for the site",
       modalText: "pls like and sub",
       showModal: false,
+      showOtherModal: false,
     };
   },
   methods: {
@@ -38,6 +46,9 @@ export default {
     },
     toggleModal() {
       this.showModal = !this.showModal;
+    },
+    toggleOtherModal() {
+      this.showOtherModal = !this.showOtherModal;
     },
   },
 };
