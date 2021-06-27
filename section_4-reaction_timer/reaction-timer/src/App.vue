@@ -1,15 +1,12 @@
 <template>
-<h1>Reaction Timer</h1>
+  <h1>Reaction Timer</h1>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-  components: {
-    
-  }
-}
+  name: "App",
+  components: {}
+};
 </script>
 
 <style>
